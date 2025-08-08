@@ -5,7 +5,7 @@ while(isNaN(numerosecreto) || numerosecreto < 0 || numerosecreto > 10){
     numerosecreto=prompt("Escreva um número:");
 }
 numerosecreto=Number(numerosecreto);
-let numeromaquina = Math.floor(0, 10);
+let numeromaquina = Math.floor(Math.random() * 11);
 while (numerosecreto != numeromaquina) {
     alert("Que pena, você errou!");
     numerosecreto=prompt("Tente novamente, escreva um número entre 0-10:");
