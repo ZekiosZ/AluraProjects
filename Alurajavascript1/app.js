@@ -11,6 +11,11 @@ numerosecreto=Number(numerosecreto);
 while (numerosecreto != numeromaquina) {
     console.log("Número digitado" + numerosecreto, "Número certo" + numeromaquina);
     alert("Que pena, você errou!");
+    if (numerosecreto < numeromaquina) {
+        alert("O número secreto é maior que " + numerosecreto + "!");
+    } else {
+        alert("O número secreto é menor que " + numerosecreto + "!");
+    }
     numerosecreto=prompt("Tente novamente, escreva um número entre 0-10:");
     while(isNaN(numerosecreto) || numerosecreto < 0 || numerosecreto > 10){
         alert("Escreva um número válido, tente novamente!");
